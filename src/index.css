@@ -1,5 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+box-sizing: border-box;
+margin: 0;
+}
 body {
-  margin: 0;
+  
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +19,30 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#art-description:focus {
+  border-color: blue;
+}
+
+input[type=file]::file-selector-button {
+  background-color: rgb(10, 153, 39);
+  color: whitesmoke;
+  border: 1px solid rgb(3, 87, 32);
+  border-radius: 2.5px;
+}
+
+.art-display-grid {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 5vw;
+  row-gap: 5vh;
+}
+
+.art-item {
+  min-height: 30vh;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.7120098039215687) 0%, rgba(117, 117, 132, 0.7456232492997199) 44%, rgba(26, 18, 143, 0.38707983193277307) 100%), url("https://scx1.b-cdn.net/csz/news/800/2017/theoreticala.jpg");
+  background-position: center;
+  background-size: cover;
 }
